@@ -15,18 +15,18 @@ if response.status_code == 200:
     for r in rows[1:-1]: 
         colums = r.find_all('td')
         row_data = [c.text.strip() for c in colums ]
-        if row_data[0] in important_cast:
+        if True:
             for i,d in enumerate(pools_dates):
                 if row_data[i+1] :
                     val = re.findall(r"\d+", row_data[i+1])
-                    rank = val[0] if  len(val)> 0 else 0
-                    votes = val[1] if len(val)> 1 else 0
-                    data.append([row_data[0],int(rank),int(votes),d,int(total_data[i+1].replace('+',''))])
+                    rank = val[0] if  len(val)> 0 else None
+                    votes = val[1] if len(val)> 1 else None
+                    data.append([row_data[0],rank,votes,d,int(total_data[i+1].replace('+',''))])
                 else : 
-                    data.append([row_data[0],0,0,d,int(total_data[i+1].replace('+',''))])
+                    data.append([row_data[0],None,None,d,int(total_data[i+1].replace('+',''))])
 
 header = ['Character', 'Rank', 'Votes','Pool year', 'Total nomber of votes']           
-with open('..\Datasets\Popularity.csv', 'w', encoding='UTF8', newline='') as f:
+with open('..\Datasets\All_Popularity.csv', 'w', encoding='UTF8', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         writer.writerows(data)
