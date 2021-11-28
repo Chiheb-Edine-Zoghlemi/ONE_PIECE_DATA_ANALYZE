@@ -1,4 +1,5 @@
 # One_Piece_Data_Mining
+<img src="img/logo.png">
 ## Data Set 
 I created two scrapers for the datasets you can find them under /Scrapers 
 - Scraper anime collected the data from : https://www.ratingraph.com/tv-shows/one-piece-ratings-17673/
