@@ -56,7 +56,7 @@ for  i in range(1,1001):
         
 
 
-with open('../Datasets/Canon_Charachters.csv', 'w', encoding='UTF8', newline='') as f:
+with open('../Datasets/Canon_Charachters_appearances.csv', 'w', encoding='UTF8', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(charachters)
         writer.writerows(data)
