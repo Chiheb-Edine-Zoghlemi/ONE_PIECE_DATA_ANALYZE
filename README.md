@@ -7,6 +7,11 @@ I created two scrapers for the datasets you can find them under /Scrapers
 - Scraper popularity collect the data  from : https://onepiece.fandom.com/wiki/Popularity_Polls
 ## Data mining 
 The rest of the work in located in the Project notebook
+- i made a clustering model using KNN
+- i made a rating predection model (Neural Network) based on the characters in episode 
 ## IMG
 in this folder you will find some cool one piece images
+##video 
+in this folder you will find a cool trailer for onepiece
+
 ### Powered by : Chiheb Edine Zoghlemi 
